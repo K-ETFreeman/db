@@ -65,7 +65,7 @@ If you want other Docker containers to connect to the database, put them into th
                -e MYSQL_ROOT_PASSWORD=banana \
                -e MYSQL_DATABASE=faf \
                -d --name faf-db \
-               mysql:5.7
+               mariadb:10.6
 
 ### Updating the database
 In order to update an existing database to the newest schema version, first you need to build it from within the directory:
